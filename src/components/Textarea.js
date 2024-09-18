@@ -34,9 +34,9 @@ export default function Textarea(props) {
   <button className="btn btn-primary"onClick={handleUpClick}>To UpperCase</button>
   <button className="btn btn-primary  mx-3"onClick={handleLoClick}>To LowerCase</button>
   <button className="btn btn-primary  mx-3"onClick={handleMdHashClick}>Clear</button>
-  <h2>character in text box{text.length}</h2>
-  <h2>numberof words in text area {text.split(" ").length}</h2>
-  <h2>{0.0008 * text.split(" ").length} meanutes to read</h2>
+  <h2 className={`text-${props.mode ==='dark'?'light':'dark'}`}>character in text box{text.length}</h2>
+  <h2 className={`text-${props.mode ==='light'?'dark':'light'}`}>numberof words in text area {text.split(" ").length}</h2>
+  <h2 className={`text-${props.mode ==='light'?'dark':'light'}`}>{0.0008 * text.split(" ").length} meanutes to read</h2>
 
 </div>
     </div>
